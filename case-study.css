@@ -308,6 +308,41 @@
 }
 
 /* ===========================
+   PLACEHOLDER IMAGES
+=========================== */
+.cs-img-placeholder {
+  width: 100%;
+  min-height: 360px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+
+.cs-img-placeholder--full {
+  min-height: 520px;
+}
+
+.cs-cover-placeholder {
+  min-height: 480px;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.cs-img-placeholder span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.cs-problems-grid--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ===========================
    LIGHTBOX
 =========================== */
 .zoomable {
@@ -415,7 +450,8 @@
   .cs-meta-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
   .cs-section { padding: 48px 28px; }
   .cs-two-col { grid-template-columns: 1fr; gap: 24px; }
-  .cs-problems-grid { grid-template-columns: 1fr; }
+  .cs-problems-grid,
+  .cs-problems-grid--three { grid-template-columns: 1fr; }
   .cs-divider { margin: 0 28px; }
   .cs-next { padding: 48px 28px; }
   .cs-img-full,
