@@ -1,0 +1,468 @@
+/* ===========================
+   CASE STUDY — HERO
+=========================== */
+.cs-hero {
+  padding: calc(var(--nav-height) + 56px) 56px 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.cs-back {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  transition: color var(--transition);
+}
+
+.cs-back:hover { color: var(--text); }
+
+.cs-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cs-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(40px, 6vw, 80px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.0;
+  margin-bottom: 16px;
+}
+
+.cs-tagline {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  color: var(--mint);
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.cs-cover {
+  width: 100%;
+  border-radius: var(--radius) var(--radius) 0 0;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.cs-cover-img {
+  width: 100%;
+  max-height: 620px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===========================
+   CASE STUDY — META BAR
+=========================== */
+.cs-meta {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 32px 56px;
+}
+
+.cs-meta-grid {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.cs-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cs-meta-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cs-meta-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ===========================
+   CASE STUDY — SECTIONS
+=========================== */
+.cs-section {
+  padding: 72px 56px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.cs-section-inner { width: 100%; }
+
+.cs-two-col {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.cs-col-label { padding-top: 6px; }
+
+.cs-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.cs-section-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.cs-body {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.85;
+  font-weight: 400;
+  margin-bottom: 20px;
+  max-width: 680px;
+}
+
+.cs-body:last-child { margin-bottom: 0; }
+
+.cs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 680px;
+}
+
+.cs-list li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding-left: 20px;
+  position: relative;
+}
+
+.cs-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--purple);
+  font-weight: 700;
+}
+
+/* ===========================
+   CASE STUDY — PROBLEMS GRID
+=========================== */
+.cs-problems-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.cs-problem-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px;
+}
+
+.cs-problem-number {
+  font-family: 'Fraunces', serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--border);
+  line-height: 1;
+  display: block;
+  margin-bottom: 16px;
+  letter-spacing: -0.04em;
+}
+
+.cs-problem-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+/* ===========================
+   CASE STUDY — IMAGES
+=========================== */
+.cs-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.cs-img-caption {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Full-width image */
+.cs-img-full {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 56px 64px;
+  overflow: hidden;
+}
+
+.cs-img-full img {
+  width: 100%;
+  max-height: 680px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* Two-up side by side */
+.cs-img-two {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 56px 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cs-img-two .cs-img { max-height: 480px; }
+
+/* Three-up grid */
+.cs-img-three {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 56px 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.cs-img-three .cs-img { max-height: 360px; }
+
+/* Social grid — square tiles, 3 columns */
+.cs-img-social {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 56px 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.cs-img-social .cs-img-wrap img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.cs-img-social .cs-img-wrap img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Shared image wrapper */
+.cs-img-wrap img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+/* Hide placeholder slots where the image file doesn't exist yet */
+.cs-img[src*="PLACEHOLDER"] {
+  min-height: 220px;
+  background: var(--surface);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  object-fit: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===========================
+   PLACEHOLDER IMAGES
+=========================== */
+.cs-img-placeholder {
+  width: 100%;
+  min-height: 360px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+
+.cs-img-placeholder--full {
+  min-height: 520px;
+}
+
+.cs-cover-placeholder {
+  min-height: 480px;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.cs-img-placeholder span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.cs-problems-grid--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ===========================
+   LIGHTBOX
+=========================== */
+.zoomable {
+  cursor: zoom-in;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.zoomable:hover {
+  transform: scale(1.01);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  cursor: zoom-out;
+}
+
+.lightbox.active { display: flex; }
+
+.lightbox-img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 24px;
+  right: 28px;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition);
+}
+
+.lightbox-close:hover { background: rgba(255, 255, 255, 0.24); }
+
+/* ===========================
+   CASE STUDY — DIVIDER
+=========================== */
+.cs-divider {
+  height: 1px;
+  background: var(--border);
+  max-width: 1280px;
+  margin: 0 56px;
+}
+
+/* ===========================
+   CASE STUDY — NEXT
+=========================== */
+.cs-next {
+  border-top: 1px solid var(--border);
+  padding: 72px 56px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cs-next-link {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  transition: color var(--transition);
+}
+
+.cs-next-link:hover { color: var(--purple); }
+
+.cs-next-arrow {
+  transition: transform var(--transition);
+}
+
+.cs-next-link:hover .cs-next-arrow { transform: translateX(8px); }
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 960px) {
+  .cs-hero { padding: calc(var(--nav-height) + 32px) 28px 0; }
+  .cs-meta { padding: 28px; }
+  .cs-meta-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .cs-section { padding: 48px 28px; }
+  .cs-two-col { grid-template-columns: 1fr; gap: 24px; }
+  .cs-problems-grid,
+  .cs-problems-grid--three { grid-template-columns: 1fr; }
+  .cs-divider { margin: 0 28px; }
+  .cs-next { padding: 48px 28px; }
+  .cs-img-full,
+  .cs-img-two,
+  .cs-img-three,
+  .cs-img-social { padding: 0 28px 48px; }
+  .cs-img-two { grid-template-columns: 1fr; }
+  .cs-img-three { grid-template-columns: 1fr 1fr; }
+  .cs-img-social { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .cs-meta-grid { grid-template-columns: 1fr 1fr; }
+}
